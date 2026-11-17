@@ -9,7 +9,7 @@ description = "Structured cross-omics interaction discovery with a triple-graph 
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Jiaao Yu", email = "jy2941@umd.edu" }]
 keywords = ["multi-omics", "integration", "biclustering", "dense subgraph", "greedy peeling"]
 classifiers = [

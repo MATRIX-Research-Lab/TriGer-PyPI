@@ -1,31 +1,52 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
 name = "triger"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Structured cross-omics interaction discovery with a triple-graph model"
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.10"
-authors = [{ name = "Jiaao Yu", email = "jy2941@umd.edu" }]
+authors = [
+    { name = "Jiaao Yu", email = "jy2941@umd.edu" },
+    { name = "Huang Lin", email = "huanglinfrederick@gmail.com" },
+]
+maintainers = [{ name = "Huang Lin", email = "huanglinfrederick@gmail.com" }]
 keywords = ["multi-omics", "integration", "biclustering", "dense subgraph", "greedy peeling"]
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering :: Bio-Informatics",
 ]
-dependencies = ["numpy>=1.21", "matplotlib>=3.5"]
+dependencies = ["numpy>=1.21", "scipy>=1.8", "matplotlib>=3.5"]
 
 [project.optional-dependencies]
-test = ["pytest>=7"]
+test = ["pytest>=7", "pandas>=1.4"]
 
 [project.urls]
-Homepage = "https://github.com/jy2941/TriGer-PyPI"
+Homepage = "https://github.com/MATRIX-Research-Lab/TriGer-PyPI"
+Issues = "https://github.com/MATRIX-Research-Lab/TriGer-PyPI/issues"
+Changelog = "https://github.com/MATRIX-Research-Lab/TriGer-PyPI/blob/main/CHANGELOG.md"
+"R package" = "https://github.com/MATRIX-Research-Lab/TriGer"
 "Paper code" = "https://github.com/jy2941/TriGer"
+
+[tool.hatch.version]
+path = "src/triger/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/triger"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/triger", "tests", "README.md", "CHANGELOG.md", "LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

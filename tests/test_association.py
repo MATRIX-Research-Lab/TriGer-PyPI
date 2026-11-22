@@ -29,7 +29,7 @@ def test_association_matches_pearsonr():
     assert a.R[0, 40] == pytest.approx(r)
     assert a.P[0, 40] == pytest.approx(-np.log10(p))
     s = triger.association_matrices(X, Y, method="spearman")
-    rho = stats.spearmanr(X["g1"], Y["m2"]).statistic
+    rho, _ = stats.spearmanr(X["g1"], Y["m2"])
     assert s.R[1, 42] == pytest.approx(rho)
 
 

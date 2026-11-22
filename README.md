@@ -1,7 +1,23 @@
-# triger
+# TriGer
 
-Python package for **TriGer**, from the paper *Structured cross-omics interaction
-discovery with a triple-graph model*.
+[![tests](https://github.com/MATRIX-Research-Lab/TriGer-PyPI/actions/workflows/tests.yml/badge.svg)](https://github.com/MATRIX-Research-Lab/TriGer-PyPI/actions/workflows/tests.yml)
+[![PyPI](https://img.shields.io/pypi/v/triger)](https://pypi.org/project/triger/)
+[![Python](https://img.shields.io/pypi/pyversions/triger)](https://pypi.org/project/triger/)
+[![bioRxiv](https://img.shields.io/badge/bioRxiv-10.64898%2F2026.09.10.749540-b31b1b)](https://doi.org/10.64898/2026.09.10.749540)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MATRIX-Research-Lab/TriGer-PyPI/blob/main/LICENSE)
+
+| Platform | Repository | Installation |
+|----------|------------|--------------|
+| R | [MATRIX-Research-Lab/TriGer](https://github.com/MATRIX-Research-Lab/TriGer) | `remotes::install_github("MATRIX-Research-Lab/TriGer")` |
+| Python | [MATRIX-Research-Lab/TriGer-PyPI](https://github.com/MATRIX-Research-Lab/TriGer-PyPI) (this repository) | `pip install triger` |
+| MATLAB | [jy2941/TriGer](https://github.com/jy2941/TriGer) | Clone the repository and add `matlab/methods` and `matlab/visualization` to the MATLAB path |
+
+The R and Python packages give identical results on the same input; both are
+tested against shared reference outputs. The MATLAB repository also contains
+the code for the simulations and the real-data analyses of the paper.
+
+Python package `triger` for **TriGer**, from the paper *Structured cross-omics
+interaction discovery with a triple-graph model*.
 
 TriGer finds modules of features that are densely associated across two omics
 layers (X and Y) and coherent within each layer. It peels dense blocks from the
@@ -72,13 +88,11 @@ smaller, denser blocks. `max_blocks` is the maximum number of blocks found in
 the cross-omics step (default 5). The CRC and IBD analyses of the paper, run
 with the MATLAB code, correspond to `max_blocks=4`.
 
-The R package gives identical results on the same input; both packages are
-tested against shared reference outputs.
+## Citation
 
-## Related
-
-- R package: [TriGer](https://github.com/MATRIX-Research-Lab/TriGer)
-- Code for the paper's simulations and analyses: [TriGer](https://github.com/jy2941/TriGer)
+Yu J, Lin H, Chen S (2026). Structured cross-omics interaction discovery with a
+triple-graph model. *bioRxiv*.
+[doi:10.64898/2026.09.10.749540](https://doi.org/10.64898/2026.09.10.749540)
 
 ## License
 

@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use TriGer, please cite the paper below."
+type: software
+title: "TriGer: structured cross-omics interaction discovery with a triple-graph model (Python package)"
+authors:
+  - family-names: Yu
+    given-names: Jiaao
+  - family-names: Lin
+    given-names: Huang
+    orcid: "https://orcid.org/0000-0002-4892-7871"
+repository-code: "https://github.com/MATRIX-Research-Lab/TriGer-PyPI"
+url: "https://pypi.org/project/triger/"
+license: MIT
+keywords:
+  - multi-omics
+  - data integration
+  - dense subgraph
+preferred-citation:
+  type: article
+  title: "Structured cross-omics interaction discovery with a triple-graph model"
+  authors:
+    - family-names: Yu
+      given-names: Jiaao
+    - family-names: Lin
+      given-names: Huang
+      orcid: "https://orcid.org/0000-0002-4892-7871"
+    - family-names: Chen
+      given-names: Shuo
+  journal: bioRxiv
+  year: 2026
+  doi: "10.64898/2026.09.10.749540"
+  url: "https://www.biorxiv.org/content/10.64898/2026.09.10.749540v1"

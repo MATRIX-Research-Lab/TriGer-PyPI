@@ -2,7 +2,6 @@
 
 [![tests](https://github.com/MATRIX-Research-Lab/TriGer-PyPI/actions/workflows/tests.yml/badge.svg)](https://github.com/MATRIX-Research-Lab/TriGer-PyPI/actions/workflows/tests.yml)
 [![PyPI](https://img.shields.io/pypi/v/triger)](https://pypi.org/project/triger/)
-[![Python](https://img.shields.io/pypi/pyversions/triger)](https://pypi.org/project/triger/)
 [![bioRxiv](https://img.shields.io/badge/bioRxiv-10.64898%2F2026.09.10.749540-b31b1b)](https://doi.org/10.64898/2026.09.10.749540)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/MATRIX-Research-Lab/TriGer-PyPI/blob/main/LICENSE)
 

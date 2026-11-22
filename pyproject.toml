@@ -17,7 +17,7 @@ authors = [
 maintainers = [{ name = "Huang Lin", email = "huanglinfrederick@gmail.com" }]
 keywords = ["multi-omics", "integration", "biclustering", "dense subgraph", "greedy peeling"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
